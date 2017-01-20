@@ -1,0 +1,39 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Fullerton University</title>
+  <meta name="description" content="Fullerton Database">
+  <meta name="author" content="Rocio Andy Rodolfo">
+
+  <link rel="stylesheet" type="text/css" href="main.css">
+ 
+</head>
+
+<body>
+  <div id="headermain"></div> 
+  <div id="logo"></div> 
+  
+  <div id="main">
+			<div id="nav"> 
+				<a href="index.html" class="homenav" >Home</a>
+				<a href="student.html" class="homenav" >Students</a>
+				<a href="professor.html" class="homenav" >Professor</a>
+			</div>			
+			
+			<h2>Search for sections of a course:</h2>
+			<form action="corsearch.php" method="POST">
+				Enter course number: <input type="text" maxlength="10" name="corno" />
+				<input class="button" type="submit" value="Submit" style="padding:10px;height:50px"/>
+			</form>
+			</br>
+			<h2>For transcripts:</h2>
+			<form action="transcript.php" method="POST">
+				CWID:<input type="text" maxlength="10" name="cwid" />
+				<input class="button" type="submit" value="Submit" style="padding:10px;height:50px"/>
+			</form>
+  </div>
+</body>
+</html>
